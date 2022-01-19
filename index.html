@@ -54,7 +54,6 @@
         .logo a {
             text-decoration: none;
             color: black;
-
         }
 
         nav ul {
@@ -63,8 +62,6 @@
             float: right;
             margin-right: 30px;
             text-shadow: 1px 1px grey;
-
-
         }
 
         nav ul li {
@@ -73,7 +70,6 @@
             list-style: none;
             display: inline-block;
             margin-right: 65px;
-
         }
 
         nav ul li a {
@@ -82,7 +78,6 @@
             color: white;
             text-decoration: none;
             line-height: 60px;
-
         }
 
         nav ul li a:hover {
@@ -105,7 +100,6 @@
             float: none;
             display: list-item;
             position: relative;
-
         }
 
         .about {
@@ -117,7 +111,6 @@
             left: -7%;
             margin: 0;
             height: 70px;
-            
             -ms-transform: translateY(-90%);
             transform: translateY(-90%);
             position: relative;
@@ -139,31 +132,25 @@
             background: white;
             border-top-left-radius: 3px;
             border-top-right-radius: 3px;
-
         }
 
         .mainMenuItem:hover {
             background: #34CC99;
-
         }
 
         .lastSubItem {
             border-bottom-left-radius: 3px;
             border-bottom-right-radius: 3px;
         }
-
+/* Responsiveness on medium/smaller screens below */
         @media only screen and (max-width: 1430px) {
             body {
                 background-size: 130%;
-
-
             }
 
             nav {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-                
-
             }
 
             .logo {
@@ -174,113 +161,113 @@
             }
 
             .mainMenu {
-                
                 display: grid;
                 grid-column: 3/ span 6;
-
                 top: 50%;
                 left: -3%;
-                
                 -ms-transform: translateY(-90%);
                 transform: translateY(-29%);
                 position: relative;
-                
                 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
             }
+
             .mainMenuItem {
                 height: 10px;
             }
+
             .subMenu {
                 z-index: 3;
             }
+
             nav ul li {
                 margin-right: 30px;
-
             }
         }
-
+/* Mobile responsiveness below */
         @media only screen and (max-width: 1023px) {
             body {
                 background-size: 250%;
-                background-position:center bottom;
+                background-position: center bottom;
                 background-attachment: fixed;
                 font-size: small;
             }
+
             nav {
-                height:200px;
+                height: 200px;
                 grid-template-columns: 1fr 1fr 1fr;
                 width: 100%;
             }
-            
+
             .logo {
-               font-size: 48px; 
+                font-size: 48px;
                 grid-column: 1;
                 margin-top: 20px;
                 margin-left: -80px;
             }
+
             .mainMenu {
                 margin-top: -20px;
                 margin-left: 30px;
                 height: 80px;
-                
                 grid-column: 2/span 2;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-template-rows: 1fr 1fr;
-                
             }
-            
-            .menu{
+
+            .menu {
                 margin-left: -5px;
             }
+
             .row2 {
                 grid-row: 2;
             }
+
             .column1 {
                 grid-column: 1;
-                grid-row: 1;;
+                grid-row: 1;
             }
+
             .mainMenuItem {
                 height: 60px;
                 margin-right: 3px;
                 width: 14em;
                 display: grid;
-
-                
             }
-            
+
             .mainMenuText {
                 font-size: 30px;
                 text-align: center;
                 height: 0;
-                
             }
+
             nav ul ul li {
                 font-size: 30px;
-            text-align: center;
-            width: 210px;
-            height: 100px;
-            float: none;
-            display: list-item;
-            position: relative;
-            
-        }
-        .about {
-            height: 200px;
-        }
+                text-align: center;
+                width: 210px;
+                height: 100px;
+                float: none;
+                display: list-item;
+                position: relative;
+            }
+
+            .about {
+                height: 200px;
+            }
+
             .row1 {
-               z-index: 3;
+                z-index: 3;
             }
-            .column3 {
+
+            .column2 {
                 grid-column: 2;
-              grid-row: 2;
-              
+                grid-row: 2;
+
             }
-           
+
             .lastItem {
                 height: 40px;
                 margin-top: -17px;
-                
             }
         }
     </style>
@@ -319,7 +306,7 @@
                         <li class="lastSubItem"><a href="#">SALE</a></li>
                     </ul>
                 </li>
-                <li class="mainMenuItem column3 lastItem"><a href="#" class="mainMenuText">BLOG</a></li>
+                <li class="mainMenuItem column2 lastItem"><a href="#" class="mainMenuText">BLOG</a></li>
                 <li class="mainMenuItem row2 lastItem"><a href="#" class="mainMenuText">CONTACT</a></li>
             </ul>
         </nav>
